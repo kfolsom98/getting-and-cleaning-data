@@ -191,7 +191,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 * tBodyGyroMean
 * tBodyGyroJerkMean
 
-__Only Mean and Standard Deviation Measurements were included in the final analysis__
+__Only Mean and Standard Deviation Measurements were included in the final analysis and tidy dataset produced.__
 
 ### Transformation details
 
@@ -205,12 +205,12 @@ __Only Mean and Standard Deviation Measurements were included in the final analy
 
 ###How run_analysis.R implements the above steps:
 
-* Require dplyr library
-* Load both test and train data
-* Load the features and activity labels.
-* Add the subject and activity names to the training and test datasets.
+* Requires dplyr library
+* Loads both test and train data
+* Loads the features and activity labels.
+* Adds the subject and activity names to the training and test datasets.
 * Merges the raw training and test datasets.
-* Extract the mean and standard deviation column names and data.
+* Extracts the mean and standard deviation column names and data.
 * Renames the mean and standard deviation columns appropriately.
-* ssCreates an summarized final tidy dataset which is aggregated to 180 observations 
-   30 subjects with 6 activities each and 79 variables with standard deviation and mean measurements
+* Creates an summarized final tidy dataset which is aggregated to 180 observations 
+   ** 30 subjects with 6 activities each and 79 variables with standard deviation and mean measurements
