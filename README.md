@@ -9,6 +9,7 @@ The goal of this project is to prepare tidy data that can be used for later anal
 This repo explains how all of the scripts work and how they are connected. 
 
 Files included in this repository:
+
 1. README.MD
 2. Codebook.MD
 3. run_analysis.R 
