@@ -24,8 +24,11 @@ More specific information can be found in the comments embedded in the run_analy
 
 ### Running the script
 
-Executing the run_analysis.R script presupposes that the Samsung dataset is in your current working directory, is uncompressed, and is located in the folder "UCI HAR Dataset".
-The run_analysis.R script sets the current working directory to "UCI HAR Dataset"
+Executing the run_analysis.R script presupposes that the Samsung dataset is:
+1. In your current working directory
+2. Uncompressed
+3. Located in the folder "UCI HAR Dataset".
+
 
 The Samsung data can be obtained here:
 
