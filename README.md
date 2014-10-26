@@ -1,11 +1,17 @@
-### Introduction
+## Introduction
+
 ### Getting and Cleaning Data -- Course Project Samsung UCI HAR Dataset
 
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. In this particular project, the data being tidied are from the dataset 
 from the Human Activity Recognition Using Smartphones Dataset (UCI HAR Dataset).
 The goal of this project is to prepare tidy data that can be used for later analysis. 
 
-This repo explains how all of the scripts work and how they are connected.  
+This repo explains how all of the scripts work and how they are connected. 
+
+Files included in this repository:
+1. README.MD
+2. Codebook.MD
+3. run_analysis.R 
 
 ### Approach
 
