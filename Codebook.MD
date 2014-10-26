@@ -1,4 +1,5 @@
-CodeBook
+###CodeBook
+
 This a codebook that describes the variables, the data, and any transformations used to produce a tidy dataset from the Human Activity Recognition Using Smartphones Dataset (UCI HAR Dataset).
 The data source
 The data collected in the UCI HAR Dataset represents data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
@@ -7,7 +8,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Data used for this project are found here: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Data Set Information
+###Data Set Information
+
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 For each record the following is provided:
@@ -36,13 +38,17 @@ Notes:
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
+Inertial datasets provided in the Samsung data were not included as part of this analysis.
 
+###Variables
 
+The variables below represent the 81 variables captured in the final tidy UCI HAR dataset at the completion of the analysis.  
+The raw UCI HAR dataset contained 561 variables with 10,299 observations for the training and test dataset.   
+Any of the 561 variables not relating to measurements on the mean and standard deviation for each measurement where not included in the final analysis.   
+No units of measurement are included.
 
+###Tidy UCI Dataset Variables
 
-Variables
-The variables below represent the 81 variables captured in the final tidy UCI HAR dataset at the completion of the analysis.  The raw UCI HAR dataset contained 561 variables with 10,299 observations for the training and test dataset.   Any of the 561 variables not relating to measurements on the mean and standard deviation for each measurement where not included in the final analysis.   No units of measurement are included.
-Tidy UCI Dataset Variables
 subject                                             
 activityLabel
 tBody_Acc_Mean_X
@@ -124,6 +130,14 @@ fBody_BodyGyroMag_MeanFreq
 fBody_BodyGyroJerkMag_Mean
 fBody_BodyGyroJerkMag_Std
 fBody_BodyGyroJerkMag_MeanFreq
+
+Subject = A value between 1 and 30 representing the observations for subjects 1 - 30.
+activityLabel = one of 6 activities recorded for each subject
+	        (laying, sitting, standing, walking, walking_downstairs, walking_upstairs)
+
+
+Specifics on the remaining variables above:
+
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
@@ -174,20 +188,24 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-Transformation details
+### Transformation details
 
-There are 5 parts:
+5 Parts in the transformation
 
 Merges the training and the test sets to create one data set.
 Extracts only the measurements on the mean and standard deviation for each measurement.
 Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive activity names.
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-How run_analysis.R implements the above steps:
 
-Require reshapre2 and data.table librareis.
+###How run_analysis.R implements the above steps:
+
+Require dplyr library
 Load both test and train data
 Load the features and activity labels.
+Add the subject and activity names to the training and test datasets.
+Merges the raw training and test datasets.
 Extract the mean and standard deviation column names and data.
-Process the data. There are two parts processing test and train data respectively.
-Merge data set.
+Renames the mean and standard deviation columns appropriately.
+Creates an summarized final tidy dataset which is aggregated to 180 observations 
+   30 subjects with 6 activities each and 79 variables with standard deviation and mean measurements
