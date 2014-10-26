@@ -50,90 +50,90 @@ No units of measurement are included.
 
 ###Tidy UCI Dataset Variables
 
-subject                                             
-activityLabel
-tBody_Acc_Mean_X
-tBody_Acc_Mean_Y
-tBody_Acc_Mean_Z
-tBody_Acc_Std_X
-tBody_Acc_Std_Y
-tBody_Acc_Std_Z
-tGravity_Acc_Mean_X
-tGravity_Acc_Mean_Y
-tGravity_Acc_Mean_Z
-tGravity_Acc_Std_X
-tGravity_Acc_Std_Y
-tGravity_Acc_Std_Z
-tBody_AccJerk_Mean_X
-tBody_AccJerk_Mean_Y
-tBody_AccJerk_Mean_Z
-tBody_AccJerk_Std_X
-tBody_AccJerk_Std_Y
-tBody_AccJerk_Std_Z
-tBody_Gyro_Mean_X
-tBody_Gyro_Mean_Y
-tBody_Gyro_Mean_Z
-tBody_Gyro_Std_X
-tBody_Gyro_Std_Y
-tBody_Gyro_Std_Z
-tBody_GyroJerk_Mean_X
-tBody_GyroJerk_Mean_Y
-tBody_GyroJerk_Mean_Z
-tBody_GyroJerk_Std_X
-tBody_GyroJerk_Std_Y
-tBody_GyroJerk_Std_Z
-tBody_AccMag_Mean
-tBody_AccMag_Std
-tGravity_AccMag_Mean
-tGravity_AccMag_Std
-tBody_AccJerkMag_Mean
-tBody_AccJerkMag_Std
-tBody_GyroMag_Mean
-tBody_GyroMag_Std
-tBody_GyroJerkMag_Mean
-tBody_GyroJerkMag_Std
-fBody_Acc_Mean_X
-fBody_Acc_Mean_Y
-fBody_Acc_Mean_Z
-fBody_Acc_Std_X
-fBody_Acc_Std_Y
-fBody_Acc_Std_Z
-fBody_Acc_MeanFreq_X
-fBody_Acc_MeanFreq_Y
-fBody_Acc_MeanFreq_Z
-fBody_AccJerk_Mean_X
-fBody_AccJerk_Mean_Y
-fBody_AccJerk_Mean_Z
-fBody_AccJerk_Std_X
-fBody_AccJerk_Std_Y
-fBody_AccJerk_Std_Z
-fBody_AccJerk_MeanFreq_X
-fBody_AccJerk_MeanFreq_Y
-fBody_AccJerk_MeanFreq_Z
-fBody_Gyro_Mean_X
-fBody_Gyro_Mean_Y
-fBody_Gyro_Mean_Z
-fBody_Gyro_Std_X
-fBody_Gyro_Std_Y
-fBody_Gyro_Std_Z
-fBody_Gyro_MeanFreq_X
-fBody_Gyro_MeanFreq_Y
-fBody_Gyro_MeanFreq_Z
-fBody_AccMag_Mean
-fBody_AccMag_Std
-fBody_AccMag_MeanFreq
-fBody_BodyAccJerkMag_Mean
-fBody_BodyAccJerkMag_Std
-fBody_BodyAccJerkMag_MeanFreq
-fBody_BodyGyroMag_Mean
-fBody_BodyGyroMag_Std
-fBody_BodyGyroMag_MeanFreq
-fBody_BodyGyroJerkMag_Mean
-fBody_BodyGyroJerkMag_Std
-fBody_BodyGyroJerkMag_MeanFreq
+* subject                                             
+* activityLabel
+* tBody_Acc_Mean_X
+* tBody_Acc_Mean_Y
+* tBody_Acc_Mean_Z
+* tBody_Acc_Std_X
+* tBody_Acc_Std_Y
+* tBody_Acc_Std_Z
+* tGravity_Acc_Mean_X
+* tGravity_Acc_Mean_Y
+* tGravity_Acc_Mean_Z
+* tGravity_Acc_Std_X
+* tGravity_Acc_Std_Y
+* tGravity_Acc_Std_Z
+* tBody_AccJerk_Mean_X
+* tBody_AccJerk_Mean_Y
+* tBody_AccJerk_Mean_Z
+* tBody_AccJerk_Std_X
+* tBody_AccJerk_Std_Y
+* tBody_AccJerk_Std_Z
+* tBody_Gyro_Mean_X
+* tBody_Gyro_Mean_Y
+* tBody_Gyro_Mean_Z
+* tBody_Gyro_Std_X
+* tBody_Gyro_Std_Y
+* tBody_Gyro_Std_Z
+* tBody_GyroJerk_Mean_X
+* tBody_GyroJerk_Mean_Y
+* tBody_GyroJerk_Mean_Z
+* tBody_GyroJerk_Std_X
+* tBody_GyroJerk_Std_Y
+* tBody_GyroJerk_Std_Z
+* tBody_AccMag_Mean
+* tBody_AccMag_Std
+* tGravity_AccMag_Mean
+* tGravity_AccMag_Std
+* tBody_AccJerkMag_Mean
+* tBody_AccJerkMag_Std
+* tBody_GyroMag_Mean
+* tBody_GyroMag_Std
+* tBody_GyroJerkMag_Mean
+* tBody_GyroJerkMag_Std
+* fBody_Acc_Mean_X
+* fBody_Acc_Mean_Y
+* fBody_Acc_Mean_Z
+* fBody_Acc_Std_X
+* fBody_Acc_Std_Y
+* fBody_Acc_Std_Z
+* fBody_Acc_MeanFreq_X
+* fBody_Acc_MeanFreq_Y
+* fBody_Acc_MeanFreq_Z
+* fBody_AccJerk_Mean_X
+* fBody_AccJerk_Mean_Y
+* fBody_AccJerk_Mean_Z
+* fBody_AccJerk_Std_X
+* fBody_AccJerk_Std_Y
+* fBody_AccJerk_Std_Z
+* fBody_AccJerk_MeanFreq_X
+* fBody_AccJerk_MeanFreq_Y
+* fBody_AccJerk_MeanFreq_Z
+* fBody_Gyro_Mean_X
+* fBody_Gyro_Mean_Y
+* fBody_Gyro_Mean_Z
+* fBody_Gyro_Std_X
+* fBody_Gyro_Std_Y
+* fBody_Gyro_Std_Z
+* fBody_Gyro_MeanFreq_X
+* fBody_Gyro_MeanFreq_Y
+* fBody_Gyro_MeanFreq_Z
+* fBody_AccMag_Mean
+* fBody_AccMag_Std
+* fBody_AccMag_MeanFreq
+* fBody_BodyAccJerkMag_Mean
+* fBody_BodyAccJerkMag_Std
+* fBody_BodyAccJerkMag_MeanFreq
+* fBody_BodyGyroMag_Mean
+* fBody_BodyGyroMag_Std
+* fBody_BodyGyroMag_MeanFreq
+* fBody_BodyGyroJerkMag_Mean
+* fBody_BodyGyroJerkMag_Std
+* fBody_BodyGyroJerkMag_MeanFreq
 
-Subject = A value between 1 and 30 representing the observations for subjects 1 - 30.
-activityLabel = one of 6 activities recorded for each subject
+* Subject = A value between 1 and 30 representing the observations for subjects 1 - 30.
+* activityLabel = one of 6 activities recorded for each subject
 	        (laying, sitting, standing, walking, walking_downstairs, walking_upstairs)
 
 
@@ -146,67 +146,68 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+* mean(): Mean value
+* std(): Standard deviation
+* mad(): Median absolute deviation 
+* max(): Largest value in array
+* min(): Smallest value in array
+* sma(): Signal magnitude area
+* energy(): Energy measure. Sum of the squares divided by the number of values. 
+* iqr(): Interquartile range 
+* entropy(): Signal entropy
+* arCoeff(): Autorregresion coefficients with Burg order equal to 4
+* correlation(): correlation coefficient between two signals
+* maxInds(): index of the frequency component with largest magnitude
+* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+* skewness(): skewness of the frequency domain signal 
+* kurtosis(): kurtosis of the frequency domain signal 
+* bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+* angle(): Angle between to vectors.
+
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
 ### Transformation details
 
 5 Parts in the transformation
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive activity names.
-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive activity names.
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ###How run_analysis.R implements the above steps:
 
-Require dplyr library
-Load both test and train data
-Load the features and activity labels.
-Add the subject and activity names to the training and test datasets.
-Merges the raw training and test datasets.
-Extract the mean and standard deviation column names and data.
-Renames the mean and standard deviation columns appropriately.
-Creates an summarized final tidy dataset which is aggregated to 180 observations 
+* Require dplyr library
+* Load both test and train data
+* Load the features and activity labels.
+* Add the subject and activity names to the training and test datasets.
+* Merges the raw training and test datasets.
+* Extract the mean and standard deviation column names and data.
+* Renames the mean and standard deviation columns appropriately.
+* sCreates an summarized final tidy dataset which is aggregated to 180 observations 
    30 subjects with 6 activities each and 79 variables with standard deviation and mean measurements
