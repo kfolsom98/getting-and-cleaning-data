@@ -1,6 +1,6 @@
 ##Codebook
 
-This a codebook that describes the variables, the data, and any transformations used to produce a tidy dataset from the Human Activity Recognition Using Smartphones Dataset (UCI HAR Dataset).
+This codebook describes the variables, data, and data transformations used to produce a tidy dataset from the Human Activity Recognition Using Smartphones Dataset (UCI HAR Dataset).
 The data source
 The data collected in the UCI HAR Dataset represents data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
 
