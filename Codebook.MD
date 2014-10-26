@@ -1,4 +1,4 @@
-##CodeBook
+##Codebook
 
 This a codebook that describes the variables, the data, and any transformations used to produce a tidy dataset from the Human Activity Recognition Using Smartphones Dataset (UCI HAR Dataset).
 The data source
