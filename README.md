@@ -25,16 +25,15 @@ More specific information can be found in the comments embedded in the run_analy
 ### Running the script
 
 Executing the run_analysis.R script presupposes that the Samsung dataset is:
-1. In your current working directory
-2. Uncompressed
-3. Located in the folder "UCI HAR Dataset".
+* In your current working directory  
+* Uncompressed  
+* Located in the folder "UCI HAR Dataset"
 
 
 The Samsung data can be obtained here:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-The code should have a file run_analysis.R in the main directory that can be run as long as the Samsung data is in your working directory. The output should be the tidy data set you submitted for part 1. You should include a README.md in the repo describing how the script works and the code book describing the variables.
 
 ### Steps Performed in the Analysis
 
@@ -47,5 +46,5 @@ The code should have a file run_analysis.R in the main directory that can be run
 ### Tidy Data Output
 
 The final clean set of data is created in the file named uci_har_tidy.txt upon completion of the execution the run_analysis.R script.  
-Fields in the tidy file are separated by commas; file does not include quotes.  
+Fields in the tidy file are separated by commas; file does not include quotes and is created in your current working directory.
 Further details about the contents of the resultant tidy dataset can be found in the CodeBook.md file, which is located in the main directory for this repository.
