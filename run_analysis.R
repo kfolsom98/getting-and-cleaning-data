@@ -1,4 +1,7 @@
 
+## This script requires the dplyr package
+## ensure dplyr is loaded before continuing
+
 if(require("dplyr")){
     print("dplyr package loaded correctly")
     
@@ -15,53 +18,55 @@ if(require("dplyr")){
     }
 }
 
-# This script assumes that the Samsung data in your working directory
+## Execution Note ##
+# This script assumes that the Samsung data in your working directory and is uncomprised in a folder named UCI HAR Dataset
 
-# set working directory to UCI HAR Dataset folder
-setwd('UCI HAR Dataset/')
 
-##---------------------------------------------------
 ## Load the data files in the UCI HAR Dataset in order to merge the training and test datasets
 
 print("Loading UCI HAR files...")
 
 ## column names for the Training and Test Datasets
-features <- read.table("features.txt")[,2]
+features <- read.table("UCI HAR Dataset/features.txt")[,2]
 
 ## Activity file used to set the Activity Labels 
 ## name the columns AcivityID and ActivityLabel 
-activity_lookup <- read.table("activity_labels.txt", col.names = c("activityID", "activityLabel"))
+activity_lookup <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("activityID", "activityLabel"))
 
 ## Prepare Training Data ##
 ##---------------------------------------------------
 
 # Load the training dataset and set the column names to the names provided in the features files
-training.data <- read.table("train/X_train.txt") 
+training.data <- read.table("UCI HAR Dataset/train/X_train.txt") 
 names(training.data) <- features
 
 # Read in the training activity identifiers; this will be used to determine the Activiy Label
-training.activityID <- read.table("train/y_train.txt", col.names = "activityID")
+training.activityID <- read.table("UCI HAR Dataset/train/y_train.txt", col.names = "activityID")
 
 # Read in the data for the 30 training subjects in the study
-training.subjects <- read.table("train/subject_train.txt", col.names = "subject")
+training.subjects <- read.table("UCI HAR Dataset/train/subject_train.txt", col.names = "subject")
 
 # add the activity IDs and subjects the the training data using column bind
 training.data.all <- cbind(training.data, training.activityID, training.subjects)
 
+print("Training dataset completed")
+
 ## Prepare Test Data ##
 ##---------------------------------------------------
 # Load the test dataset and set the column names to the names provided in the features files
-test.data <- read.table("test/X_test.txt")
+test.data <- read.table("UCI HAR Dataset/test/X_test.txt")
 colnames(test.data) <- features
 
 # Read in the training activity identifiers; this will be used to determine the Activiy Label
-test.ActivityID <- read.table("test/y_test.txt", col.names = "activityID")
+test.ActivityID <- read.table("UCI HAR Dataset/test/y_test.txt", col.names = "activityID")
 
 # Read in the data for the 24 test subjects in the study
-test.subjects <- read.table("test/subject_test.txt", col.names = "subject")
+test.subjects <- read.table("UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
 
 # add the activity IDs and subjects the the test data using column bind
 test.data.all <- cbind(test.data, test.ActivityID, test.subjects)
+
+print("Test dataset completed")
 
 ## Create Combined Training and Test Dataset ##
 combined.data <- rbind(training.data.all, test.data.all)
@@ -106,4 +111,4 @@ print("Aggregated dataset created")
 
 write.csv(all.data, 'uci_har_tidy.csv', row.names = FALSE, quote = FALSE)
 
-print("Tidy dataset file created; filename uci_har_tidy.csv")
+print("Tidy dataset file created! Output filename = uci_har_tidy.csv")
