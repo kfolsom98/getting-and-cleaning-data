@@ -109,6 +109,6 @@ all.data <- group_by(all.data, subject, activityLabel) %>%
 
 print("Aggregated dataset created")
 
-write.csv(all.data, 'uci_har_tidy.csv', row.names = FALSE, quote = FALSE)
+write.csv(all.data, 'uci_har_tidy.txt', row.names = FALSE, quote = FALSE)
 
-print("Tidy dataset file created! Output filename = uci_har_tidy.csv")
+print("Tidy dataset file created! Output filename = uci_har_tidy.txt")
