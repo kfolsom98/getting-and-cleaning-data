@@ -28,5 +28,5 @@ The code should have a file run_analysis.R in the main directory that can be run
 
 ### Tidy Data Output
 
-The final clean set of data uci_har_tidy.csv upon completion of the executing the run_analysis.R script.  
+The final clean set of data is created in the file named uci_har_tidy.csv upon completion of the execution the run_analysis.R script.  
 Further details about the contents of the resultant tidy dataset can be found in the CodeBook.md file, which is located in the main directory for this repository.
