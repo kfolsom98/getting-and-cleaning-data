@@ -112,3 +112,4 @@ print("Aggregated dataset created")
 write.csv(all.data, 'uci_har_tidy.txt', row.names = FALSE, quote = FALSE)
 
 print("Tidy dataset file created! Output filename = uci_har_tidy.txt")
+print("script completed.")
